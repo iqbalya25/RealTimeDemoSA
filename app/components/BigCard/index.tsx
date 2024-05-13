@@ -13,7 +13,14 @@ const Card: React.FC<CardProps> = ({ CardContent }) => {
           background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-15"></div>
+        <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-transparent via-transparent to-black">
+          <img
+            src="/MainHero.jpg"
+            alt=""
+            className="w-full h-full object-cover"
+            style={{ position: "absolute", top: 0, left: 0 }}
+          />
+        </div>
         <div className="p-4 relative z-10">{CardContent}</div>
       </div>
     </div>

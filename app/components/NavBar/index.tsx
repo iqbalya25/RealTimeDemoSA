@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 const NavBar = () => {
@@ -42,30 +43,30 @@ const NavBar = () => {
         </div>
 
         <div>
-          <a
-            href="#"
+          <Link
+            href="/"
             className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             Home
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/about"
             className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             About
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/services"
             className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             Services
-          </a>
-          <a
-            href="#"
+          </Link>
+          <Link
+            href="/contact"
             className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
           >
             Contact
-          </a>
+          </Link>
         </div>
       </div>
     </div>
