@@ -12,7 +12,7 @@ interface SolutionListProps {
 
 const SolutionList: React.FC<SolutionListProps> = ({ solutions }) => {
   return (
-    <div className="flex flex-row justify-center w-full">
+    <div className="flex flex-col justify-center w-full items-center md:flex-row">
       {solutions.map((solution, index) => (
         <div key={index} className="flex items-center">
           <div className="bg-slate-400 rounded-full h-12 w-12 flex items-center justify-center mr-4">

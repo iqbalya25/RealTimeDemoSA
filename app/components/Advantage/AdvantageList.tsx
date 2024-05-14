@@ -12,7 +12,7 @@ interface AdvProps {
 
 const AdvantageList: React.FC<AdvProps> = ({ Advantages }) => {
   return (
-    <div className="grid grid-cols-3 gap-4 justify-center">
+    <div className="flex flex-col justify-center md:grid grid-cols-3 gap-4">
       {Advantages.map((rowContent, rowIndex) =>
         rowContent.map((advantage, index) => (
           <div

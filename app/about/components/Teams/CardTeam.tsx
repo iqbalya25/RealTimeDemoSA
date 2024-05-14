@@ -4,7 +4,7 @@ interface cardAboutProps {
   children: ReactNode;
 }
 
-const CardAbout: React.FC<cardAboutProps> = ({ children }) => {
+const CardTeams: React.FC<cardAboutProps> = ({ children }) => {
   return (
     <div className="w-[350px] bg-white shadow-2xl rounded-lg p-6 md:w-auto">
       {children}
@@ -12,4 +12,4 @@ const CardAbout: React.FC<cardAboutProps> = ({ children }) => {
   );
 };
 
-export default CardAbout;
+export default CardTeams;

@@ -1,3 +1,5 @@
+"use client";
+
 import CardAbout from "./CardAbout";
 
 const AboutItem = [
@@ -59,8 +61,8 @@ const AboutContent = () => {
         </div>
       </div>
 
-      <div className=" flex flex-col justify-center items-center py-10">
-        <div className="flex flex-row max-w-[1000px] gap-7">
+      <div className="flex flex-col justify-center items-center py-28">
+        <div className="flex flex-col gap-7 md:flex-row max-w-[1000px]">
           {AboutItem.map((item, index) => (
             <CardAbout key={index}>
               <h2 className="text-4xl font-bold mb-2 py-5">{item.title}</h2>

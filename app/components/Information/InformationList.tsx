@@ -15,7 +15,7 @@ interface InfoItemProps {
 
 const InformationList: React.FC<InfoItemProps> = ({ InfoListingItem }) => {
   return (
-    <div className="flex flex-row justify-between">
+    <div className="flex flex-col justify-between items-center md:flex-row">
       {InfoListingItem.map((InfoListing, index) => (
         <SmallCard key={index}>
           {Object.entries(InfoListing).map(([key, value]) => (
