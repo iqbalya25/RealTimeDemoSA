@@ -45,7 +45,7 @@ export const Teams = () => {
                 className="object-cover w-full h-full rounded-full"
               />
             </div>
-            <div className="text-[1rem] py-[2rem] rounded-b-2xl text-black text-center font-semibold relative">
+            <div className="text-[1rem] py-[3rem] rounded-b-2xl text-black text-center font-semibold relative">
               {user.name.first} {user.name.last}
             </div>
           </CardTeams>
