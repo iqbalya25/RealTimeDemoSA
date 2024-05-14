@@ -34,7 +34,7 @@ const NavBar = () => {
         top: 0,
         left: 0,
         right: 0,
-        zIndex: isSticky ? 100 : 10,
+        zIndex: isSticky ? 2 : 1,
       }}
     >
       <div className="flex flex-row justify-between w-full p-2">
