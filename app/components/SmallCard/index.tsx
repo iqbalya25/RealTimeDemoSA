@@ -11,7 +11,7 @@ const SmallCard: React.FC<SmallCardProps> = ({ children }) => {
         <div
           className="rounded-lg shadow-lg overflow-hidden relative"
           style={{
-            background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)",
+            background: "linear-gradient(90deg, #bdc3c7, #2c3e50)",
           }}
         >
           <div className="absolute inset-0 bg-black opacity-10"></div>

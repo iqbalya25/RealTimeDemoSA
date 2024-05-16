@@ -20,9 +20,9 @@ const Hero = () => {
 
   return (
     <div
-      className="flex h-screen" 
+      className="flex h-screen"
       style={{
-        background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)",
+        background: "linear-gradient(90deg, #bdc3c7, #2c3e50)",
       }}
     >
       <div className="inset-0 opacity-20">

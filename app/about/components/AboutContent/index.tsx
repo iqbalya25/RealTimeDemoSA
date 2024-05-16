@@ -21,7 +21,7 @@ const AboutContent = () => {
       <div
         className="flex flex-col items-center justify-center relative bg-opacity-50"
         style={{
-          background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB) ",
+          background: "linear-gradient(90deg, #bdc3c7, #2c3e50) ",
           minHeight: "70vh",
           maxHeight: "auto",
         }}

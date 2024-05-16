@@ -10,10 +10,10 @@ const Card: React.FC<CardProps> = ({ CardContent }) => {
       <div
         className="rounded-lg shadow-lg overflow-hidden relative"
         style={{
-          background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)",
+          background: "linear-gradient(90deg, #bdc3c7, #2c3e50)",
         }}
       >
-        <div className="absolute inset-0 opacity-20 bg-gradient-to-r from-transparent via-transparent to-black">
+        <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent via-transparent to-black">
           <img
             src="/MainHero.jpg"
             alt=""

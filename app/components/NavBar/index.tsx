@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
@@ -24,7 +25,7 @@ const NavBar = () => {
 
   return (
     <div
-      className={`flex justify-between py-3 w-full z-10 ${
+      className={`flex justify-between py-3 w-full z-10${
         isSticky ? "" : "bg-opacity-0"
       }`}
       style={{
@@ -34,13 +35,13 @@ const NavBar = () => {
         right: 0,
         zIndex: isSticky ? 100 : 1,
         background: isSticky
-          ? "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)"
+          ? "linear-gradient(90deg, #bdc3c7, #2c3e50)"
           : "none",
       }}
     >
-      <div className="flex flex-row justify-between w-full p-2">
+      <div className="flex flex-row justify-between w-full py-2 px-4 items-center">
         <div className="flex-shrink-0">
-          <h1 className="text-white text-xl font-bold pl-5">Company Name</h1>
+          <img src="/SA.png" alt="" className="w-28" />
         </div>
 
         <div>

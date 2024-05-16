@@ -17,7 +17,7 @@ const AdvantageList: React.FC<AdvProps> = ({ Advantages }) => {
         rowContent.map((advantage, index) => (
           <div
             key={`${rowIndex}-${index}`}
-            className="flex flex-col items-center p-5"
+            className="flex flex-col items-center p-5 text-white"
           >
             <img
               src={advantage.image}
