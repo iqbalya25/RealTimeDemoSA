@@ -14,7 +14,7 @@ const Clients: React.FC = () => {
             src={client.logo}
             alt={client.name}
             className="inline-block w-32 h-auto animate-marquee"
-            style={{ animationDuration: "1s" }} // Adjust animation duration as needed
+            style={{ animationDuration: "1s" }}
           />
         ))}
       </div>
