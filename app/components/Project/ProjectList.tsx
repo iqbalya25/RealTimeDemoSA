@@ -1,7 +1,15 @@
+import {
+  Accordion,
+  AccordionItem,
+  AccordionButton,
+  AccordionPanel,
+  AccordionIcon,
+  Box,
+} from "@chakra-ui/react";
+
 interface ProjectItem {
+  title: string; // Tambahkan properti title
   project1: string;
-  project2: string;
-  project3: string;
 }
 
 interface ProjectProps {
@@ -11,13 +19,26 @@ interface ProjectProps {
 const ProjectList: React.FC<ProjectProps> = ({ projectListItem }) => {
   return (
     <div>
-      {projectListItem.map((projects, index) => (
-        <div key={index}>
-          {Object.entries(projects).map(([key, value]) => (
-            <p key={key} className="p-4">
-              {value}
-            </p>
-          ))}
+      {projectListItem.map((project, index) => (
+        <div key={index} className="p-5">
+          <Accordion allowMultiple>
+            {/* Gunakan properti title untuk judul AccordionItem */}
+            <AccordionItem key={index}>
+              <h2 className="py-3 text-2xl">
+                <AccordionButton>
+                  <Box as="span" flex="1" textAlign="left">
+                    <div>{project.title}</div>
+                  </Box>
+                  <AccordionIcon />
+                </AccordionButton>
+              </h2>
+              <AccordionPanel pb={4}>
+                <div className=" rounded-md text-white font-normal ">
+                  {project.project1}
+                </div>
+              </AccordionPanel>
+            </AccordionItem>
+          </Accordion>
         </div>
       ))}
     </div>

@@ -25,16 +25,17 @@ const NavBar = () => {
   return (
     <div
       className={`flex justify-between py-3 w-full z-10 ${
-        isSticky
-          ? "bg-gradient-to-r from-blue-400 to-green-400"
-          : "bg-opacity-0"
+        isSticky ? "" : "bg-opacity-0"
       }`}
       style={{
         position: isSticky ? "fixed" : "absolute",
         top: 0,
         left: 0,
         right: 0,
-        zIndex: isSticky ? 2 : 1,
+        zIndex: isSticky ? 100 : 1,
+        background: isSticky
+          ? "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)"
+          : "none",
       }}
     >
       <div className="flex flex-row justify-between w-full p-2">

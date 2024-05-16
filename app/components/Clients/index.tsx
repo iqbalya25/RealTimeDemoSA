@@ -1,7 +1,5 @@
-// Clients.tsx
 import React from "react";
 import ClientsItem from "./ClientsItem";
-import ClientsList from "./ClientList";
 
 const Clients: React.FC = () => {
   return (
@@ -9,8 +7,16 @@ const Clients: React.FC = () => {
       <div className="flex justify-center">
         <h1 className="text-4xl font-bold text-black">Our Clients</h1>
       </div>
-      <div className="py-10">
-        <ClientsList Clients={ClientsItem} />
+      <div className="py-10 overflow-hidden">
+        {ClientsItem.map((client, index) => (
+          <img
+            key={index}
+            src={client.logo}
+            alt={client.name}
+            className="inline-block w-32 h-auto animate-marquee"
+            style={{ animationDuration: "1s" }} // Adjust animation duration as needed
+          />
+        ))}
       </div>
     </div>
   );

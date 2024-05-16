@@ -19,15 +19,15 @@ const AboutContent = () => {
   return (
     <div>
       <div
-        className="flex flex-col items-center justify-center relative"
+        className="flex flex-col items-center justify-center relative bg-opacity-50"
         style={{
-          background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)",
+          background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB) ",
           minHeight: "70vh",
           maxHeight: "auto",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-20"></div>
-        <div className="w-full md:w-[80%] max-w-[1000px] text-justify text-white z-10 p-4 md:p-0">
+        <div className="bg-black opacity-20 absolute top-0"></div>
+        <div className="w-full md:w-[80%] max-w-[1000px] text-justify text-white p-4 md:p-0 font-semibold top-52">
           <h1 className="text-2xl md:text-4xl font-bold pb-5">About Us</h1>
           <div className=" ">
             <p>

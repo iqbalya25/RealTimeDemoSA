@@ -13,19 +13,19 @@ const Hero = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 3000);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div
-      className="flex h-screen relative"
+      className="flex h-screen" 
       style={{
         background: "linear-gradient(90deg, #1FA2FF, #12D8FA, #A6FFCB)",
       }}
     >
-      <div className="absolute inset-0 opacity-20">
+      <div className="inset-0 opacity-20">
         <img
           src="/MainHero.jpg"
           alt=""
