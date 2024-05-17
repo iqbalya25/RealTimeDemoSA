@@ -27,7 +27,7 @@ const Hero = () => {
     >
       <div className="inset-0 opacity-20">
         <img
-          src="/MainHero.jpg"
+          src="/lampimage.png"
           alt=""
           className="w-full h-full object-cover"
           style={{ position: "absolute", top: 0, left: 0 }}

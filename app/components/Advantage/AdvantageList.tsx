@@ -17,14 +17,17 @@ const AdvantageList: React.FC<AdvProps> = ({ Advantages }) => {
         rowContent.map((advantage, index) => (
           <div
             key={`${rowIndex}-${index}`}
-            className="flex flex-col items-center p-5 text-white"
+            className="flex flex-col gap-2 items-center p-5 text-white"
           >
             <img
               src={advantage.image}
               alt={advantage.title}
               className="w-14 h-14"
+              style={{ filter: "invert(1)" }}
             />
-            <h2>{advantage.title}</h2>
+            <h2 className="text-2xl font-bold text-yellow-300">
+              {advantage.title}
+            </h2>
             <p>{advantage.caption}</p>
           </div>
         ))

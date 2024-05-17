@@ -29,7 +29,7 @@ const AboutContent = () => {
         <div className="bg-black opacity-20 absolute top-0"></div>
         <div className="w-full md:w-[80%] max-w-[1000px] text-justify text-white p-4 md:p-0 font-semibold top-52">
           <h1 className="text-2xl md:text-4xl font-bold pb-5">About Us</h1>
-          <div className=" ">
+          <div className="text-sm md:text-xl">
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
               vero voluptatum dicta cumque? Voluptate, amet placeat maxime nobis

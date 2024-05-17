@@ -1,14 +1,14 @@
 import { ReactNode } from "react";
 
 interface WhiteCardProps {
-  WhiteCardContent: ReactNode; // Mengubah tipe prop menjadi ReactNode
+  WhiteCardContent: ReactNode;
 }
 
 const WhiteCard: React.FC<WhiteCardProps> = ({ WhiteCardContent }) => {
   return (
     <div className="mx-auto max-w-screen-lg px-4 pb-10">
       <div className="rounded-lg shadow-lg overflow-hidden bg-white">
-        <div className="p-20">{WhiteCardContent}</div>
+        <div className="p-10">{WhiteCardContent}</div>
       </div>
     </div>
   );
