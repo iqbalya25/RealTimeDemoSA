@@ -12,8 +12,8 @@ export const Services = () => {
       <NavBar />
       <ServicesContent />
       <ServicesGallery />
-      <DemoSection />
-      <RelayControl />
+      {/* <DemoSection />
+      <RelayControl /> */}
     </div>
   );
 };

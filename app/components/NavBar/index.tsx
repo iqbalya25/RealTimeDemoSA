@@ -53,7 +53,7 @@ const NavBar: React.FC = () => {
     >
       <nav className="hidden md:flex flex-row justify-between w-full py-2 px-4 items-center">
         <Link href="/" className="flex-shrink-0">
-          <img src="/SA.png" alt="" className="w-36" />
+          <img src="/SA.png" alt="sundayautomation" className="w-36" />
         </Link>
 
         {/* Menu items */}
