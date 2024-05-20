@@ -6,7 +6,7 @@ interface cardAboutProps {
 
 const CardTeams: React.FC<cardAboutProps> = ({ children }) => {
   return (
-    <div className="w-[350px] bg-white shadow-2xl rounded-lg p-6 md:w-auto">
+    <div className="flex flex-col justify-center items-center w-[350px] bg-white shadow-2xl rounded-lg p-6 md:w-auto">
       {children}
     </div>
   );

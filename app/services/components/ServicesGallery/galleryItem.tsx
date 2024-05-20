@@ -10,7 +10,7 @@ export const galleryItems = [
   {
     href: "#",
     imgSrc:
-      "https://res.cloudinary.com/djyevwtie/image/upload/v1716186031/assetscc/klfswjkgnyznmi0j9mgh.webp",
+      "https://res.cloudinary.com/djyevwtie/image/upload/v1716188475/assetscc/oucbwojl8nexlo3o2sdo.webp",
     alt: "new installation",
     label: "New Installation",
   },

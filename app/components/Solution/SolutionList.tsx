@@ -45,7 +45,7 @@ const SolutionList: React.FC<SolutionListProps> = ({ solutions }) => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-center w-full items-center gap-3 p-3">
+    <div className="flex flex-col lg:flex-row justify-center w-full items-center gap-2 p-2">
       {solutions.map((solution, index) => (
         <div
           key={index}
@@ -57,7 +57,7 @@ const SolutionList: React.FC<SolutionListProps> = ({ solutions }) => {
           <WhiteCard
             WhiteCardContent={
               <div className="flex items-center h-full">
-                <div className="flex items-center justify-center mr-4">
+                <div className="flex items-center justify-center mr-2">
                   <p className="text-8xl font-bold text-black">{solution.no}</p>
                 </div>
                 <div className="p-10">
