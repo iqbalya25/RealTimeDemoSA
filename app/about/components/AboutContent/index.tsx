@@ -21,29 +21,14 @@ const AboutContent = () => {
       <div
         className="flex flex-col items-center justify-center relative bg-opacity-50"
         style={{
-          background: "linear-gradient(90deg, #bdc3c7, #2c3e50) ",
+          background: "linear-gradient(90deg, #bdc3c7, #2c3e50)",
           minHeight: "70vh",
           maxHeight: "auto",
         }}
       >
-        <div className="bg-black opacity-20 absolute top-0"></div>
-        <div className="w-full md:w-[80%] max-w-[1000px] text-justify text-white p-4 md:p-0 font-semibold top-52">
+        <div className="w-full px-10 md:w-[80%] max-w-[1000px] text-justify text-white p-4 md:p-8 mt-20 md:mt-20 z-1">
           <h1 className="text-2xl md:text-4xl font-bold pb-5">About Us</h1>
           <div className="text-sm md:text-xl">
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-              vero voluptatum dicta cumque? Voluptate, amet placeat maxime nobis
-              tenetur ut laudantium rem facilis, temporibus impedit eius
-              cupiditate iure modi aliquid. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Blanditiis nam distinctio veritatis
-              officiis dolorum doloribus fuga hic eos molestiae ab recusandae,
-              corporis iure facere adipisci error, laudantium sunt! Accusamus,
-              nobis! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Libero eum excepturi, quod dolore repellat corporis quis
-              laudantium doloribus nisi, ut quae temporibus assumenda impedit
-              tempora sunt aut explicabo eligendi et?
-            </p>
-            <br />
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
               vero voluptatum dicta cumque? Voluptate, amet placeat maxime nobis
@@ -61,7 +46,7 @@ const AboutContent = () => {
         </div>
       </div>
 
-      <div className="flex flex-col justify-center items-center py-28">
+      <div className="flex flex-col justify-center items-center py-20">
         <div className="flex flex-col gap-7 md:flex-row max-w-[1000px]">
           {AboutItem.map((item, index) => (
             <CardAbout key={index}>

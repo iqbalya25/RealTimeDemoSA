@@ -1,6 +1,8 @@
 import Footer from "../components/Footer";
 import NavBar from "../components/NavBar";
 import AboutContent from "./components/AboutContent";
+import CompanyDetail from "./components/CompanyDetail";
+import MileStone from "./components/Milestone";
 import Teams from "./components/Teams";
 
 export default function About() {
@@ -8,6 +10,8 @@ export default function About() {
     <div>
       <NavBar />
       <AboutContent />
+      <CompanyDetail />
+      <MileStone />
       <Teams />
       <Footer />
     </div>

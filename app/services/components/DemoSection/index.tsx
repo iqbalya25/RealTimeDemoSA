@@ -9,8 +9,15 @@ const DemoSection = () => {
   const [temperature, setTemperature] = useState(null);
   const [humidity, setHumidity] = useState(null);
   const [chartInstance, setChartInstance] = useState<any>(null);
+  const [failCount, setFailCount] = useState(0);
+  const MAX_FAIL = 5;
 
   useEffect(() => {
+    if (failCount > MAX_FAIL) {
+      console.log("Too much fail, skipping fetch...");
+      return;
+    }
+
     const fetchSensorData = () => {
       fetch("http://raspberrypi:3010/data")
         .then((response) => {
@@ -47,6 +54,7 @@ const DemoSection = () => {
           }
         })
         .catch((error) => {
+          setFailCount((prev) => ++prev);
           console.error(
             "There was a problem with your fetch operation:",
             error
@@ -57,7 +65,7 @@ const DemoSection = () => {
     const interval = setInterval(fetchSensorData, 1000);
 
     return () => clearInterval(interval);
-  }, [temperatures, humidities, chartInstance]);
+  }, [temperatures, humidities, chartInstance, failCount]);
 
   const createChart = (temperatureData: number[], humidityData: number[]) => {
     const ctx = document.getElementById("myChart") as HTMLCanvasElement;

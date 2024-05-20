@@ -1,11 +1,23 @@
 "use client";
 
-import Image from "next/image";
-import Link from "next/link";
+import {
+  DrawerBody,
+  DrawerHeader,
+  useDisclosure,
+  Button,
+} from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import CustomDrawer from "./CustomDrawer";
+import styled from "styled-components";
 
-const NavBar = () => {
+const NavBar: React.FC = () => {
   const [isSticky, setIsSticky] = useState(false);
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const btnRef = React.useRef<HTMLButtonElement>(null);
+  const GrayBackgroundCustomDrawer = styled(CustomDrawer)`
+    background: gray;
+  `;
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,8 +37,8 @@ const NavBar = () => {
 
   return (
     <div
-      className={`flex justify-between py-3 w-full z-10${
-        isSticky ? "" : "bg-opacity-0"
+      className={`flex justify-between py-3 w-full${
+        isSticky ? "" : " bg-opacity-0"
       }`}
       style={{
         position: isSticky ? "fixed" : "absolute",
@@ -39,38 +51,100 @@ const NavBar = () => {
           : "none",
       }}
     >
-      <div className="flex flex-row justify-between w-full py-2 px-4 items-center">
-        <div className="flex-shrink-0">
-          <img src="/SA.png" alt="" className="w-28" />
-        </div>
+      <nav className="hidden md:flex flex-row justify-between w-full py-2 px-4 items-center">
+        <Link href="/" className="flex-shrink-0">
+          <img src="/SA.png" alt="" className="w-36" />
+        </Link>
 
+        {/* Menu items */}
         <div>
           <Link
             href="/"
-            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
           >
             Home
           </Link>
+
           <Link
             href="/about"
-            className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
           >
             About
           </Link>
           <Link
             href="/services"
-            className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
           >
             Services
           </Link>
           <Link
-            href="contact"
-            className="text-white  hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+            href="/contact"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
           >
             Contact
           </Link>
         </div>
+      </nav>
+
+      <div className="flex flex-row justify-between w-screen md:hidden">
+        <Link href="/" className="flex-shrink-0">
+          <img src="/SA.png" alt="" className="w-36" />
+        </Link>
+        <Button
+          ref={btnRef}
+          colorScheme="teal"
+          onClick={onOpen}
+          className={`pr-6 ${isOpen ? "!hidden" : "block"}`}
+        >
+          <img
+            src="/hamburger.png"
+            alt="menu"
+            className="w-8"
+            style={{ filter: "invert(1)" }}
+          />
+        </Button>
       </div>
+
+      <CustomDrawer
+        isOpen={isOpen}
+        placement="right"
+        onClose={onClose}
+        finalFocusRef={btnRef}
+        style={{
+          backgroundColor: "gray",
+          position: "absolute",
+          zIndex: 9999,
+          top: 100,
+          height: "100vh",
+        }}
+      >
+        <DrawerBody className="flex flex-col text-right">
+          <Link
+            href="/"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
+          >
+            Home
+          </Link>
+          <Link
+            href="/about"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
+          >
+            About
+          </Link>
+          <Link
+            href="/services"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
+          >
+            Services
+          </Link>
+          <Link
+            href="/contact"
+            className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
+          >
+            Contact
+          </Link>
+        </DrawerBody>
+      </CustomDrawer>
     </div>
   );
 };

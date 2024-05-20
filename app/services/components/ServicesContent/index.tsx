@@ -4,7 +4,7 @@ const ServicesContent = () => {
   return (
     <div>
       <div
-        className="flex flex-col items-center justify-center relative bg-opacity-50"
+        className="flex flex-col items-center justify-center relative bg-opacity-50 px-6"
         style={{
           background: "linear-gradient(90deg, #bdc3c7, #2c3e50) ",
           minHeight: "50vh",
@@ -12,8 +12,8 @@ const ServicesContent = () => {
         }}
       >
         <div className="bg-black opacity-20 absolute top-0"></div>
-        <div className="w-full md:w-[80%] max-w-[1000px] text-justify text-white p-4 md:p-0  top-52">
-          <h1 className="text-2xl md:text-6xl font-bold pb-5">Our Services</h1>
+        <div className="w-full md:w-[80%] max-w-[1000px] text-justify text-white p-4 md:p-0   mt-20">
+          <h1 className="text-4xl md:text-6xl font-bold pb-5">Our Services</h1>
           <div className="text-xl">
             <p className="text-sm md:text-xl">
               Sunday Automation works with your existing building management

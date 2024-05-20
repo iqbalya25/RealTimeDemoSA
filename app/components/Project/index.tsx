@@ -6,6 +6,9 @@ const Project = () => {
   return (
     <div className="flex justify-center">
       <div className="w-[1000px] font-bold text-white relative">
+        <h1 className="text-black text-center text-4xl p-5">
+          Energy Management & Analytics Platform
+        </h1>
         <Card CardContent={<ProjectList projectListItem={WorkList} />} />
       </div>
     </div>

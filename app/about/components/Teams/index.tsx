@@ -16,6 +16,15 @@ interface DataProps {
   };
 }
 
+const roles = [
+  "Director",
+  "Manager",
+  "Supervisor",
+  "Marketing",
+  "Engineer",
+  "Engineer",
+];
+
 export const Teams = () => {
   const [data, setData] = useState<DataProps[]>([]);
 
@@ -33,21 +42,22 @@ export const Teams = () => {
     fetchData();
   }, []);
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center text-center">
       <h1 className="text-4xl font-bold">OUR TEAMS</h1>
       <div className="flex flex-col py-10 md:grid grid-cols-3 grid-rows-2 max-w-[1000px] gap-16">
         {data.map((user, index) => (
           <CardTeams key={index}>
-            <div className="text-[6rem] bg-slate-500 w-[10rem] rounded-full">
+            <div className="text-[6rem] bg-slate-500 w-[10rem] rounded-full flex">
               <img
                 src={user.picture.large}
                 alt=""
-                className="object-cover w-full h-full rounded-full"
+                className="object-cover w-full h-full rounded-full "
               />
             </div>
             <div className="text-[1rem] py-[3rem] rounded-b-2xl text-black text-center font-semibold relative">
               {user.name.first} {user.name.last}
             </div>
+            <div className="text-[1rem] text-gray-500">{roles[index]}</div>
           </CardTeams>
         ))}
       </div>
