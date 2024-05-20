@@ -6,6 +6,8 @@ import DemoSection from "./components/DemoSection";
 import RelayControl from "./components/Relay/relay";
 import ServicesGallery from "./components/ServicesGallery";
 import Footer from "../components/Footer";
+import TemperatureDemo from "./components/TemperatureDemo";
+import RelayDemo from "./components/RelayDemo";
 
 export const Services = () => {
   return (
@@ -13,8 +15,9 @@ export const Services = () => {
       <NavBar />
       <ServicesContent />
       <ServicesGallery />
-      {/* <DemoSection />
-      <RelayControl /> */}
+      <TemperatureDemo />
+      <RelayDemo />
+      {/* <RelayControl /> */}
       <Footer />
     </div>
   );

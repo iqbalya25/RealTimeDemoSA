@@ -5,11 +5,11 @@ const CompanyDetail: React.FC = () => {
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-[1000px] px-10 md:px-8">
-        <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">
+        <h1 className="mb-4 text-center text-2xl font-trueno font-bold text-gray-800 sm:text-3xl md:mb-6">
           Our competitive advantage
         </h1>
 
-        <p className="mb-6 text-gray-500 sm:text-lg md:mb-8 text-justify">
+        <p className="mb-6 text-gray-500 font-trueno sm:text-lg md:mb-8 text-justify">
           our competitive advantage lies in our unparalleled expertise,
           innovative approach, and unwavering commitment to customer
           satisfaction. Our team of seasoned professionals brings extensive
