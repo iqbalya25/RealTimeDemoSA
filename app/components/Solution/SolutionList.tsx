@@ -58,7 +58,7 @@ const SolutionList: React.FC<SolutionListProps> = ({ solutions }) => {
             WhiteCardContent={
               <div className="flex items-center h-full">
                 <div className="flex items-center justify-center mr-2">
-                  <p className="text-8xl font-bold text-black">{solution.no}</p>
+                  <p className="text-6xl font-bold text-black">{solution.no}</p>
                 </div>
                 <div className="p-10">
                   <div>
