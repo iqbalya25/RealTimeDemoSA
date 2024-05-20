@@ -19,7 +19,7 @@ const AboutContent = () => {
   return (
     <div>
       <div
-        className="flex flex-col items-center justify-center relative bg-opacity-50"
+        className="flex flex-col items-center justify-center relative bg-opacity-50 font-trueno"
         style={{
           background: "linear-gradient(90deg, #bdc3c7, #2c3e50)",
           minHeight: "70vh",

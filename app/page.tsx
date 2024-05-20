@@ -15,7 +15,6 @@ import Reviews from "./components/Review";
 export default function Home() {
   return (
     <main>
-      <NavBar />
       <Hero />
       <Solution />
       <Project />

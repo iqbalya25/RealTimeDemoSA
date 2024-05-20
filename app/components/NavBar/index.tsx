@@ -37,7 +37,7 @@ const NavBar: React.FC = () => {
 
   return (
     <div
-      className={`flex justify-between py-3 w-full${
+      className={`flex justify-between py-3 w-full font-trueno${
         isSticky ? "" : " bg-opacity-0"
       }`}
       style={{
@@ -111,10 +111,10 @@ const NavBar: React.FC = () => {
         onClose={onClose}
         finalFocusRef={btnRef}
         style={{
-          backgroundColor: "gray",
-          position: "absolute",
+          backgroundColor: "rgb(44, 62, 80)",
+          position: "fixed",
           zIndex: 9999,
-          top: 100,
+          top: 80,
           height: "100vh",
         }}
       >
@@ -138,7 +138,7 @@ const NavBar: React.FC = () => {
             Services
           </Link>
           <Link
-            href="/contact"
+            href="/teams"
             className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
           >
             Contact

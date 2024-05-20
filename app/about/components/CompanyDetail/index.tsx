@@ -4,7 +4,7 @@ import React from "react";
 const CompanyDetail: React.FC = () => {
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
-      <div className="mx-auto max-w-[1000px] px-4 md:px-8">
+      <div className="mx-auto max-w-[1000px] px-10 md:px-8">
         <h1 className="mb-4 text-center text-2xl font-bold text-gray-800 sm:text-3xl md:mb-6">
           Our competitive advantage
         </h1>

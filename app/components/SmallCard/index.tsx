@@ -14,8 +14,7 @@ const SmallCard: React.FC<SmallCardProps> = ({ children }) => {
             background: "linear-gradient(90deg, #bdc3c7, #2c3e50)",
           }}
         >
-          <div className="absolute inset-0 bg-black opacity-10"></div>
-          <div className="p-4 relative z-10">{children}</div>
+          <div className="p-4 ">{children}</div>
         </div>
       </div>
     </div>

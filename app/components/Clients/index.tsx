@@ -2,7 +2,7 @@ import React from "react";
 import Marquee from "react-fast-marquee";
 
 const Clients = () => (
-  <div className="flex flex-col justify-center items-center gap-5 py-20">
+  <div className="flex flex-col justify-center items-center gap-5 py-20 relative z-0">
     <h1 className="text-4xl font-bold pb-10">Our Clients</h1>
     <Marquee>
       <div className="flex flex-row gap-20 items-center">

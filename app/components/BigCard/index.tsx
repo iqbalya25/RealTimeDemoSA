@@ -21,7 +21,7 @@ const Card: React.FC<CardProps> = ({ CardContent }) => {
             style={{ position: "absolute", top: 0, left: 0 }}
           />
         </div>
-        <div className="p-4 relative z-10">{CardContent}</div>
+        <div className="p-4 relative z-2">{CardContent}</div>
       </div>
     </div>
   );
