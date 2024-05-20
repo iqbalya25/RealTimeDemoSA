@@ -2,14 +2,14 @@ import { title } from "process";
 
 const WorkList = [
   {
-    title: "Smart Building",
+    title: "Industrial Automation",
     project1:
-      " works with your existing building management system to reduce total energy costs and carbon footprint significantly.",
+      " Automatization in indstrial machinery and robotic for manufacturing process and optimize industrial system.",
   },
   {
-    title: "Smart Home",
+    title: "Smart Home & Building",
     project1:
-      " comprehensive service for smart home solutions help residential customers to minimise energy consumption.",
+      " comprehensive service for smart home & building solutions help customers to optimize energy consumption and integration.",
   },
   {
     title: "Energy Efficiency",

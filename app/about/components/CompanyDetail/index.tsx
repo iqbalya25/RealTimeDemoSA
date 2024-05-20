@@ -9,7 +9,7 @@ const CompanyDetail: React.FC = () => {
           Our competitive advantage
         </h1>
 
-        <p className="mb-6 text-gray-500 font-trueno sm:text-lg md:mb-8 text-justify">
+        <p className="mb-6 text-gray-500 sm:text-lg md:mb-8 text-justify">
           our competitive advantage lies in our unparalleled expertise,
           innovative approach, and unwavering commitment to customer
           satisfaction. Our team of seasoned professionals brings extensive

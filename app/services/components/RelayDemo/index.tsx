@@ -11,14 +11,20 @@ const RelayDemo = () => {
 
   return (
     <Box textAlign="center" mt="4">
-      <Button onClick={toggleRelay} mt="4">
+      <Button
+        onClick={toggleRelay}
+        mt="10"
+        mb="10"
+        className="p-3 bg-slate-500 rounded-2xl"
+      >
         Toggle Lamp
       </Button>
       <div
         style={{
           marginTop: "16px",
-          width: "50px",
-          height: "50px",
+          padding: "10px",
+          width: "100px",
+          height: "100px",
           borderRadius: "50%",
           backgroundColor: relayOn ? "yellow" : "darkgray",
           margin: "auto",

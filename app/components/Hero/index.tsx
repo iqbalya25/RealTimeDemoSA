@@ -4,16 +4,21 @@ import React, { useState, useEffect } from "react";
 
 const Hero = () => {
   const [textIndex, setTextIndex] = useState(0);
+  const [fade, setFade] = useState(true);
   const texts = [
-    "Build a digitalized tomorrow",
-    "Build a Greener tomorrow",
-    "Build a Neutral carbon tomorrow",
+    "Let's Automate the World",
+    "Let's Digitalize the World",
+    "Let's Connect the World",
   ];
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-    }, 1500);
+      setFade(false);
+      setTimeout(() => {
+        setTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+        setFade(true);
+      }, 300);
+    }, 3000);
 
     return () => clearInterval(interval);
   }, []);
@@ -35,10 +40,18 @@ const Hero = () => {
       </div>
       <div className="flex justify-center items-center w-screen">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
-          <h1 className="mb-4 text-4xl font-bold text-white font-trueno font-light">
+          <h1
+            className="text-lg md:mb-4 md:text-4xl font-bold text-white font-light"
+            style={{
+              opacity: fade ? 1 : 0,
+              transition: "opacity 0.5s ease-in-out",
+            }}
+          >
             {texts[textIndex]}
           </h1>
-          <h2 className="text-lg text-white">Save The Power!</h2>
+          <h2 className="text-sm md:text-xl text-yellow-500 font-semibold">
+            For Better Future
+          </h2>
         </div>
       </div>
     </div>

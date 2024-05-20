@@ -1,21 +1,21 @@
 const itemList = [
   {
     no: "1",
-    title: "Digitalize",
+    title: "Automation",
     caption:
-      "We aggregate and monitor your energy assets up to component level in real time on a cloud platform.",
+      "advanced industrial automation systems streamline manufacturing processes, enhance productivity, and reduce operational costs.",
   },
   {
     no: "2",
-    title: "Analyze",
+    title: "Integration",
     caption:
-      "We provide AI-driven in depth analysis and forecasting of your energy usage.",
+      "comprehensive IoT solutions that collect and analyze data in real-time insights into energy consumption, and equipment performance",
   },
   {
     no: "3",
-    title: "Optimize",
+    title: "Digitalize",
     caption:
-      "We take fully automated control actions and ensure efficient energy usage ensuring monthly savings.r",
+      " innovative electrical management solutions utilize IoT technology to monitor and control electrical systems.",
   },
 ];
 

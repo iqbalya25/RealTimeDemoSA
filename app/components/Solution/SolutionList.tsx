@@ -45,7 +45,7 @@ const SolutionList: React.FC<SolutionListProps> = ({ solutions }) => {
   }, []);
 
   return (
-    <div className="flex flex-col lg:flex-row justify-center w-full items-center gap-2 p-2 font-trueno">
+    <div className="flex flex-col lg:flex-row justify-center w-full items-center gap-0 p-2 font-trueno">
       {solutions.map((solution, index) => (
         <div
           key={index}
@@ -67,7 +67,7 @@ const SolutionList: React.FC<SolutionListProps> = ({ solutions }) => {
                     </p>
                   </div>
                   <div>
-                    <p className="text-justify text-sm lg:text-xl">
+                    <p className="text-justify text-sm lg:text-xl font-light">
                       {solution.caption}
                     </p>
                   </div>
