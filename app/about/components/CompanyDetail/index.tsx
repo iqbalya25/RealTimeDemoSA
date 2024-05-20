@@ -36,7 +36,7 @@ const CompanyDetail: React.FC = () => {
 
         <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
           <img
-            src="https://res.cloudinary.com/djyevwtie/image/upload/v1716179973/rdkltggnokszpjsfxt4o.jpg"
+            src="https://res.cloudinary.com/djyevwtie/image/upload/v1716186031/assetscc/aelqsinj5oxlz175fqi1.webp"
             loading="lazy"
             alt="Teams"
             className="h-full w-full object-cover object-center"

@@ -27,7 +27,7 @@ const Hero = () => {
     >
       <div className="inset-0 opacity-20">
         <img
-          src="https://res.cloudinary.com/djyevwtie/image/upload/v1716179256/irym2be8cc43dc0pwgjb.jpg"
+          src="https://res.cloudinary.com/djyevwtie/image/upload/v1716186030/assetscc/wanmgsuqvy6jq12ua3je.webp"
           alt="Heroimg"
           className="w-full h-full object-cover"
           style={{ position: "absolute", top: 0, left: 0 }}

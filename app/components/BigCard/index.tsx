@@ -15,7 +15,7 @@ const Card: React.FC<CardProps> = ({ CardContent }) => {
       >
         <div className="absolute inset-0 opacity-10 bg-gradient-to-r from-transparent via-transparent to-black">
           <img
-            src="/lampimage.png"
+            src="https://res.cloudinary.com/djyevwtie/image/upload/v1716186030/assetscc/wanmgsuqvy6jq12ua3je.webp"
             alt=""
             className="w-full h-full object-cover"
             style={{ position: "absolute", top: 0, left: 0 }}

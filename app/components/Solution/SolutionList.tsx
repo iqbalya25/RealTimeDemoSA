@@ -45,7 +45,7 @@ const SolutionList: React.FC<SolutionListProps> = ({ solutions }) => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row justify-center w-full items-center gap-5 p-5">
+    <div className="flex flex-col md:flex-row justify-center w-full items-center gap-3 p-3">
       {solutions.map((solution, index) => (
         <div
           key={index}

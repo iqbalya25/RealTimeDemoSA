@@ -5,7 +5,7 @@ const milestonesData = [
     description:
       "The company was founded with the mission to innovate and lead in automation industry.",
     imageUrl:
-      "https://res.cloudinary.com/djyevwtie/image/upload/v1716179790/mkmdmlvvk2bczqpd4aqm.jpg",
+      "https://res.cloudinary.com/djyevwtie/image/upload/v1716186030/assetscc/k12hiecnqjywwo5hphbu.webp",
   },
   {
     year: "2018 - 2023",
@@ -13,7 +13,7 @@ const milestonesData = [
     description:
       "We Started In Specializing in Automation Industry Section For Controlling Industrial Machinery .",
     imageUrl:
-      "https://res.cloudinary.com/djyevwtie/image/upload/v1716177920/xsqaug3heuaphhh3lag4.jpg",
+      "https://res.cloudinary.com/djyevwtie/image/upload/v1716186030/assetscc/qbq5ibzxzeyfta1mokvy.webp",
   },
   {
     year: "2023",
@@ -21,7 +21,7 @@ const milestonesData = [
     description:
       "We Started to focusing on Internet Of Things Project to digitalize data in industrial, building, and residential to make people realized to save energy.",
     imageUrl:
-      "https://res.cloudinary.com/djyevwtie/image/upload/v1716178329/jjn8ppsa2fxgdjwspcbg.jpg",
+      "https://res.cloudinary.com/djyevwtie/image/upload/v1716186031/assetscc/g7ytmkkfavfi2ch2ptnl.webp",
   },
   // Add more milestones as needed
 ];
