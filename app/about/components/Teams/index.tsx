@@ -25,7 +25,7 @@ const roles = [
   "Engineer",
 ];
 
-export const Teams = () => {
+export const TeamsList = () => {
   const [data, setData] = useState<DataProps[]>([]);
 
   const fetchData = async () => {
@@ -42,7 +42,7 @@ export const Teams = () => {
     fetchData();
   }, []);
   return (
-    <div className="flex flex-col justify-center items-center text-center">
+    <div className="flex flex-col justify-center items-center text-center pt-10">
       <h1 className="text-4xl font-bold">OUR TEAMS</h1>
       <div className="flex flex-col py-10 md:grid grid-cols-3 grid-rows-2 max-w-[1000px] gap-16">
         {data.map((user, index) => (
@@ -65,4 +65,4 @@ export const Teams = () => {
   );
 };
 
-export default Teams;
+export default TeamsList;

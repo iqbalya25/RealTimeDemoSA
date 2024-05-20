@@ -23,10 +23,14 @@ const GalleryStructure: React.FC<GalleryStructureProps> = ({
           <h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
             Gallery
           </h2>
-          <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-            This is a section of some simple filler text, also known as
-            placeholder text. It shares some characteristics of a real written
-            text but is random or otherwise generated.
+          <p className="mx-auto max-w-screen-md text-justify text-gray-500 md:text-lg text-justify">
+            Services At Sunday Automation, we specialize in providing advanced
+            industrial automation solutions and cutting-edge IoT digitalization
+            for electrical management. Our services are tailored to enhance
+            efficiency and connectivity in industrial, commercial, and
+            residential settings. By integrating the latest technologies and
+            offering customized solutions, we help our clients achieve optimal
+            performance and create smarter, more efficient environments.
           </p>
         </div>
         {/* text - end */}

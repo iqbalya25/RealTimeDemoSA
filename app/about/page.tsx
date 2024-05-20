@@ -3,7 +3,7 @@ import NavBar from "../components/NavBar";
 import AboutContent from "./components/AboutContent";
 import CompanyDetail from "./components/CompanyDetail";
 import MileStone from "./components/Milestone";
-import Teams from "./components/Teams";
+import TeamsList from "./components/Teams";
 
 export default function About() {
   return (
@@ -12,7 +12,7 @@ export default function About() {
       <AboutContent />
       <CompanyDetail />
       <MileStone />
-      <Teams />
+      <TeamsList />
       <Footer />
     </div>
   );

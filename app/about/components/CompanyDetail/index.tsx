@@ -9,17 +9,24 @@ const CompanyDetail: React.FC = () => {
           Our competitive advantage
         </h1>
 
-        <p className="mb-6 text-gray-500 sm:text-lg md:mb-8">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text but is random or otherwise generated. It may be used to display a
-          sample of fonts or generate text for testing. Filler text is dummy
-          text which has no meaning however looks very similar to real text.
+        <p className="mb-6 text-gray-500 sm:text-lg md:mb-8 text-justify">
+          our competitive advantage lies in our unparalleled expertise,
+          innovative approach, and unwavering commitment to customer
+          satisfaction. Our team of seasoned professionals brings extensive
+          knowledge and experience in both industrial automation and IoT
+          technologies, enabling us to deliver cutting-edge solutions tailored
+          to meet the unique needs of each client. Our proactive embrace of the
+          latest technological advancements ensures that our solutions are not
+          only current but also forward-thinking, providing our clients with the
+          tools they need to stay ahead in a rapidly evolving market.
           <br />
           <br />
-          or otherwise generated. It may be used to display a sample of fonts or
-          generate text for testing. Filler text is dummy text which has no
-          meaning however looks very similar to real text.
+          Additionally, our customer-centric philosophy drives us to offer
+          exceptional service and support, fostering strong, long-lasting
+          relationships with our clients. By combining these strengths, Sunday
+          Automation stands out as a leader in creating smarter, more efficient,
+          and interconnected environments across industrial, commercial, and
+          residential sectors.
         </p>
 
         {/* <ul className="mb-6 list-inside list-disc text-gray-500 sm:text-lg md:mb-8">
@@ -43,16 +50,11 @@ const CompanyDetail: React.FC = () => {
           />
         </div>
 
-        <h2 className="mb-2 text-xl font-semibold text-gray-800 sm:text-2xl md:mb-4">
-          Features
-        </h2>
-
         <p className="text-gray-500 sm:text-lg">
-          This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text but is random or otherwise generated. It may be used to display a
-          sample of fonts or generate text for testing. Filler text is dummy
-          text which has no meaning however looks very similar to real text.
+          we continue to drive the future of automation and digitalization,
+          creating smarter, more efficient environments for all. Together, we
+          can build a connected world where technology works seamlessly to
+          enhance everyday life.
         </p>
       </div>
     </div>

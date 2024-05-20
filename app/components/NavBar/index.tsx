@@ -51,7 +51,7 @@ const NavBar: React.FC = () => {
           : "none",
       }}
     >
-      <nav className="hidden md:flex flex-row justify-between w-full py-2 px-4 items-center">
+      <nav className="hidden md:flex flex-row justify-between w-full py-2 px-6 items-center">
         <Link href="/" className="flex-shrink-0">
           <img src="/SA.png" alt="sundayautomation" className="w-36" />
         </Link>
@@ -78,10 +78,10 @@ const NavBar: React.FC = () => {
             Services
           </Link>
           <Link
-            href="/contact"
+            href="/teams"
             className="text-white hover:bg-white hover:bg-opacity-20 hover:text-white px-3 py-2 rounded-md text-xl font-medium"
           >
-            Contact
+            Teams
           </Link>
         </div>
       </nav>

@@ -6,12 +6,12 @@ const AboutItem = [
   {
     title: "Mission",
     caption:
-      "seeks to create a sustainable and digitalised energy grid, and to constantly improve energy efficiency through adoption of sustainable energy. We work towards being eco-friendly, innovative and proactive in the sustainable energy industry.",
+      "Innovation, To continuously innovate and integrate cutting-edge technologies in our solutions and always keep quality To deliver top-notch products and services that meet the highest standards of quality and reliability with the customer Satisfaction To build long-term relationships with our clients through exceptional service and support",
   },
   {
     title: "Vision",
     caption:
-      "With the adoption of renewables and digital technology growing exponentially, there will be major transformations to the energy grid. Our vision is to create an energy cloud for distributed energy resources, effectively managing today’s energy ecosystem.",
+      "we envision a future where automation and digitalization seamlessly converge to create smarter, more efficient environments. Our IoT solutions are designed to provide real time data and analytics, enabling our clients to make informed decisions, optimize energy usage, and improve overall operational efficiency.",
   },
 ];
 
@@ -30,17 +30,23 @@ const AboutContent = () => {
           <h1 className="text-2xl md:text-4xl font-bold pb-5">About Us</h1>
           <div className="text-sm md:text-xl">
             <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat
-              vero voluptatum dicta cumque? Voluptate, amet placeat maxime nobis
-              tenetur ut laudantium rem facilis, temporibus impedit eius
-              cupiditate iure modi aliquid. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Blanditiis nam distinctio veritatis
-              officiis dolorum doloribus fuga hic eos molestiae ab recusandae,
-              corporis iure facere adipisci error, laudantium sunt! Accusamus,
-              nobis! Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Libero eum excepturi, quod dolore repellat corporis quis
-              laudantium doloribus nisi, ut quae temporibus assumenda impedit
-              tempora sunt aut explicabo eligendi et?
+              Established in 2018, Sunday Automation has swiftly emerged as a
+              leader in the field of industrial automation. Our journey began
+              with a commitment to revolutionize the automation industry,
+              providing innovative solutions that enhance efficiency,
+              reliability, and productivity for our clients. In the initial
+              years, our focus was on delivering state-of-the-art industrial
+              automation systems that catered to a wide array of industries. Our
+              expertise and dedication to quality helped us build a strong
+              reputation and a loyal customer base.
+              <br />
+              <br />
+              Recognizing the rapid advancements in technology and the growing
+              importance of connectivity, in 2023, we expanded our horizons to
+              specialize in IoT (Internet of Things) solutions. This strategic
+              shift allowed us to broaden our scope, integrating digitalized
+              systems that enhance electrical management across various domains
+              including industrial, commercial, and residential sectors.
             </p>
           </div>
         </div>
@@ -51,7 +57,7 @@ const AboutContent = () => {
           {AboutItem.map((item, index) => (
             <CardAbout key={index}>
               <h2 className="text-4xl font-bold mb-2 py-5">{item.title}</h2>
-              <p>{item.caption}</p>
+              <p className="text-justify">{item.caption}</p>
             </CardAbout>
           ))}
         </div>

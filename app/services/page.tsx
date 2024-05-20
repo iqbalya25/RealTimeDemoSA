@@ -5,6 +5,7 @@ import ServicesContent from "./components/ServicesContent";
 import DemoSection from "./components/DemoSection";
 import RelayControl from "./components/Relay/relay";
 import ServicesGallery from "./components/ServicesGallery";
+import Footer from "../components/Footer";
 
 export const Services = () => {
   return (
@@ -14,6 +15,7 @@ export const Services = () => {
       <ServicesGallery />
       {/* <DemoSection />
       <RelayControl /> */}
+      <Footer />
     </div>
   );
 };

@@ -18,6 +18,9 @@ const MilestoneStructure: React.FC<MilestoneStructureProps> = ({
   return (
     <div className="bg-white py-6 sm:py-8 lg:py-12">
       <div className="mx-auto max-w-screen-md px-4 md:px-8 lg:max-w-[1000px]">
+        <h2 className="mb-2 text-xl font-semibold text-gray-800 sm:text-4xl md:mb-4 text-center p-4">
+          Milestone
+        </h2>
         {milestones.map((milestone, index) => (
           <div
             key={index}
