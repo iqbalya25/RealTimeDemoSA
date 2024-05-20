@@ -12,8 +12,8 @@ const TemperatureDemo = () => {
 
   useEffect(() => {
     const updateDummyData = () => {
-      setTemperature((prevTemp) => (prevTemp >= 27 ? 25 : prevTemp + 1));
-      setHumidity((prevHum) => (prevHum >= 42 ? 40 : prevHum + 1));
+      setTemperature((prevTemp) => (prevTemp >= 32 ? 25 : prevTemp + 1));
+      setHumidity((prevHum) => (prevHum >= 42 ? 35 : prevHum + 1));
 
       const newTemperature = temperature >= 27 ? 25 : temperature + 1;
       const newHumidity = humidity >= 42 ? 40 : humidity + 1;

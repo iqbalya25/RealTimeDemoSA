@@ -29,18 +29,6 @@ const CompanyDetail: React.FC = () => {
           residential sectors.
         </p>
 
-        {/* <ul className="mb-6 list-inside list-disc text-gray-500 sm:text-lg md:mb-8">
-          <li>This is a section of some simple filler text</li>
-          <li>Also known as placeholder text</li>
-          <li>It shares some characteristics of a real written text</li>
-        </ul>
-
-        <blockquote className="mb-6 border-l-4 pl-4 italic text-gray-500 sm:text-lg md:mb-8 md:pl-6">
-          “This is a section of some simple filler text, also known as
-          placeholder text. It shares some characteristics of a real written
-          text but is random or otherwise generated.”
-        </blockquote> */}
-
         <div className="relative mb-6 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:mb-8">
           <img
             src="https://res.cloudinary.com/djyevwtie/image/upload/v1716186031/assetscc/aelqsinj5oxlz175fqi1.webp"

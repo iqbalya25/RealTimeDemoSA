@@ -41,17 +41,3 @@ const ServicesContent = () => {
 };
 
 export default ServicesContent;
-
-{
-  /* <p>
-  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat vero
-  voluptatum dicta cumque? Voluptate, amet placeat maxime nobis tenetur ut
-  laudantium rem facilis, temporibus impedit eius cupiditate iure modi aliquid.
-  Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nam
-  distinctio veritatis officiis dolorum doloribus fuga hic eos molestiae ab
-  recusandae, corporis iure facere adipisci error, laudantium sunt! Accusamus,
-  nobis! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero eum
-  excepturi, quod dolore repellat corporis quis laudantium doloribus nisi, ut
-  quae temporibus assumenda impedit tempora sunt aut explicabo eligendi et?
-</p>; */
-}
