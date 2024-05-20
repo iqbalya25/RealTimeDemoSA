@@ -36,21 +36,21 @@ const Footer: React.FC = () => {
               target="_blank"
               className="text-gray-400 transition duration-100 hover:text-gray-800 active:text-gray-600"
             >
-              <img src="/instagram.png" className="h-5 w-5" />
+              <img src="/instagram.png" alt="instagram" className="h-5 w-5" />
             </a>
             <a
               href="https://www.youtube.com/@sundayautomation6294"
               target="_blank"
               className="text-gray-400 transition duration-100 hover:text-gray-800 active:text-gray-600"
             >
-              <img src="/youtube.png" className="h-5 w-5" />
+              <img src="/youtube.png" alt="youtube" className="h-5 w-5" />
             </a>
             <a
               href="https://github.com/iqbalya25/SundayAutomationPage"
               target="_blank"
               className="text-gray-400 transition duration-100 hover:text-gray-800 active:text-gray-600"
             >
-              <img src="/github.png" className="h-5 w-5" />
+              <img src="/github.png" alt="github" className="h-5 w-5" />
             </a>
           </div>
         </div>
