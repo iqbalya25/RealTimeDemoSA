@@ -50,15 +50,15 @@ const Clients = () => (
         </div>
         <div className="px-[4rem]">
           <img
-            src="ciputran.png"
-            alt="ciputralogo"
+            src="winteq.png"
+            alt="winteqlogo"
             style={{ width: "100px", height: "auto" }}
           />
         </div>
         <div className="px-[4rem]">
           <img
-            src="winteq.png"
-            alt="winteqlogo"
+            src="ciputran.png"
+            alt="ciputralogo"
             style={{ width: "100px", height: "auto" }}
           />
         </div>
