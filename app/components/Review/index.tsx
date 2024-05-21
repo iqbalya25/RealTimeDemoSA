@@ -42,7 +42,7 @@ const Reviews = () => {
           <div className="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
             <div>
               <span className="block text-sm font-bold md:text-base">
-                Ade Putrans
+                Dio Alfino
               </span>
               <span className="block text-sm text-gray-500">
                 April 28, 2024
