@@ -41,7 +41,7 @@ const Hero = () => {
       <div className="flex justify-center items-center w-screen">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center">
           <h1
-            className="text-lg md:mb-4 md:text-4xl font-bold text-white font-light"
+            className="text-xl md:mb-4 md:text-6xl font-bold text-white font-light"
             style={{
               opacity: fade ? 1 : 0,
               transition: "opacity 0.5s ease-in-out",
@@ -49,7 +49,7 @@ const Hero = () => {
           >
             {texts[textIndex]}
           </h1>
-          <h2 className="text-sm md:text-xl text-yellow-500 font-semibold">
+          <h2 className="text-sm md:text-2xl text-yellow-300 font-semibold">
             For Better Future
           </h2>
         </div>
