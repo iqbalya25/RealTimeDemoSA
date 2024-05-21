@@ -1,5 +1,5 @@
-// components/GalleryStructure.tsx
-import React from "react";
+"use client";
+import React, { useEffect, useRef } from "react";
 
 interface GalleryItem {
   href: string;
@@ -15,8 +15,37 @@ interface GalleryStructureProps {
 const GalleryStructure: React.FC<GalleryStructureProps> = ({
   galleryItems,
 }) => {
+  const galleryRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("opacity-100");
+            entry.target.classList.remove("opacity-0");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (galleryRef.current) {
+      observer.observe(galleryRef.current);
+    }
+
+    return () => {
+      if (galleryRef.current) {
+        observer.unobserve(galleryRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="bg-white py-6 sm:py-8 lg:py-12">
+    <div
+      ref={galleryRef}
+      className="bg-white py-6 sm:py-8 lg:py-12 opacity-0 transition-opacity duration-500"
+    >
       <div className="mx-auto max-w-screen-2xl px-8 md:px-10">
         {/* text - start */}
         <div className="mb-10 md:mb-16">

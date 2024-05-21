@@ -14,8 +14,8 @@ const ServicesContent = () => {
         <div className="bg-black opacity-20 absolute top-0"></div>
         <div className="w-full md:w-[80%] max-w-[1000px] text-justify text-white p-4 md:p-10   mt-20">
           <h1 className="text-2xl md:text-4xl font-bold pb-5">Our Services</h1>
-          <div className="text-xl">
-            <p className="text-sm md:text-xl">
+          <div className="text-sm md:text-xl">
+            <p>
               At Sunday Automation, we offer a comprehensive suite of services
               designed to meet the diverse needs of our clients across various
               sectors. Our core expertise in industrial automation enables us to

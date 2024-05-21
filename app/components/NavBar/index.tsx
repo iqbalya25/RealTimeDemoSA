@@ -107,7 +107,7 @@ const NavBar: React.FC = () => {
 
       <CustomDrawer
         isOpen={isOpen}
-        placement="right"
+        placement="bottom"
         onClose={onClose}
         finalFocusRef={btnRef}
         style={{
