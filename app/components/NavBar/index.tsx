@@ -88,7 +88,7 @@ const NavBar: React.FC = () => {
 
       <div className="flex flex-row justify-between w-screen md:hidden">
         <Link href="/" className="flex-shrink-0">
-          <img src="/SA.png" alt="" className="w-36" />
+          <img src="/SAW.webp" alt="" className="w-36" />
         </Link>
         <Button
           ref={btnRef}
