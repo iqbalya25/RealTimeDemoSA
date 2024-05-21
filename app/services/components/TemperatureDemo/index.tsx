@@ -99,8 +99,16 @@ const TemperatureDemo = () => {
 
   return (
     <Box maxW="1000px" mx="auto" p="4">
-      <Text fontSize="2xl" fontWeight="bold" mb="4" className="text-4xl py-10">
-        Demo Section
+      <Text
+        fontSize="2xl"
+        fontWeight="bold"
+        mb="4"
+        className=" py-10 text-center"
+      >
+        <h1 className="text-4xl">Demo Section</h1>
+        <br />
+        <br />
+        <p className="text-2xl">Web Based Real Time Monitoring Temperature</p>
       </Text>
 
       <Box

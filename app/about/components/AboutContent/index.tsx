@@ -1,17 +1,18 @@
 "use client";
 
+import React from "react";
 import CardAbout from "./CardAbout";
 
 const AboutItem = [
   {
-    title: "Mission",
-    caption:
-      "Innovation, To continuously innovate and integrate cutting-edge technologies in our solutions and always keep quality To deliver top-notch products and services that meet the highest standards of quality and reliability with the customer Satisfaction To build long-term relationships with our clients through exceptional service and support",
-  },
-  {
     title: "Vision",
     caption:
       "we envision a future where automation and digitalization seamlessly converge to create smarter, more efficient environments. Our IoT solutions are designed to provide real time data and analytics, enabling our clients to make informed decisions, optimize energy usage, and improve overall operational efficiency.",
+  },
+  {
+    title: "Mission",
+    caption:
+      "Innovation, To continuously innovate and integrate cutting-edge technologies in our solutions and always keep quality To deliver top-notch products and services that meet the highest standards of quality and reliability with the customer Satisfaction To build long-term relationships with our clients through exceptional service and support",
   },
 ];
 

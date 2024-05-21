@@ -9,7 +9,6 @@ const Reviews = () => {
         </h2>
 
         <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 md:gap-6">
-          {/* review - start */}
           <div className="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
             <div>
               <span className="block text-sm font-bold md:text-base">
@@ -20,7 +19,6 @@ const Reviews = () => {
               </span>
             </div>
 
-            {/* stars - start */}
             <div className="-ml-1 flex gap-0.5">
               {[...Array(5)].map((_, index) => (
                 <svg
@@ -34,29 +32,25 @@ const Reviews = () => {
                 </svg>
               ))}
             </div>
-            {/* stars - end */}
 
             <p className="text-gray-600">
               Good Installation & Good Service, Professional Work and Crew, I
               really recommend it to all my connection.
             </p>
           </div>
-          {/* review - end */}
 
-          {/* Place additional reviews here */}
           <div className="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
             <div>
               <span className="block text-sm font-bold md:text-base">
-                John McCulling
+                Ade Putrans
               </span>
               <span className="block text-sm text-gray-500">
-                August 28, 2021
+                April 28, 2024
               </span>
             </div>
 
-            {/* stars - start */}
             <div className="-ml-1 flex gap-0.5">
-              {[...Array(5)].map((_, index) => (
+              {[...Array(2)].map((_, index) => (
                 <svg
                   key={index}
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,16 +62,8 @@ const Reviews = () => {
                 </svg>
               ))}
             </div>
-            {/* stars - end */}
 
-            <p className="text-gray-600">
-              Ive been utilizing the IoT solutions provided by XYZ Tech for the
-              past year, and I must say, Im thoroughly impressed. Their
-              innovative approach to connecting devices and optimizing data
-              management has significantly streamlined our operations. The
-              seamless integration of their platform with our existing
-              infrastructure has made the transition smooth and hassle-free.
-            </p>
+            <p className="text-gray-600">Skip, B aja</p>
           </div>
 
           {/* Review ke 3*/}
