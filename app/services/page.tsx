@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../components/NavBar";
-import AboutContent from "../about/components/AboutContent";
 import ServicesContent from "./components/ServicesContent";
 import ServicesGallery from "./components/ServicesGallery";
 import Footer from "../components/Footer";
