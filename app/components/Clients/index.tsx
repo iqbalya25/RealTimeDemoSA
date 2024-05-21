@@ -50,7 +50,7 @@ const Clients = () => (
         </div>
         <div className="px-[4rem]">
           <img
-            src="ciputra.png"
+            src="ciputran.png"
             alt="ciputralogo"
             style={{ width: "100px", height: "auto" }}
           />
